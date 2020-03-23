@@ -1,0 +1,29 @@
+"""Read and explore your data
+In this lab, you'll explore a dataset containing information on a university's recent 
+graduates for each department. 
+The URL this dataset can be downloaded from is stored in a variable called recent_grads_url. 
+In this exercise, you'll read in this data using Python's pandas module."""
+
+
+# Import pandas 
+import pandas as pd
+
+# Use pandas to read in recent_grads_url
+recent_grads = pd.read_csv(recent_grads_url)
+
+# Print the shape
+print(recent_grads.shape)
+
+
+""Exploring Your Data
+Now you'll perform some data exploration using the Python pandas module. To get a sense of the data, 
+you'll output statistics such as mean, median, count, and percentiles."""
+
+# Print .dtypes
+print(recent_grads.dtypes)
+
+# Output summary statistics
+print(recent_grads.describe())
+
+# Exclude data of type object
+print(recent_grads.describe(exclude=['object']))
