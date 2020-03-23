@@ -54,3 +54,17 @@ sw_col = recent_grads['sharewomen']
 
 # Output first five rows
 print(sw_col.iloc[:5])
+
+
+# Question 5
+
+# Import numpy
+import numpy as np
+
+# Use max to output maximum values
+max_sw = np.max(sw_col)
+
+# Print column max
+print(max_sw)
+
+
