@@ -45,3 +45,12 @@ print(recent_grads["median"].unique())
 # Replace missing values with NaN
 for column in columns:
     recent_grads.loc[recent_grads[column] == 'UN', column] = np.nan
+    
+    
+ #Question 4  
+ #Select a column and print first 5 rows
+    # Select sharewomen column
+sw_col = recent_grads['sharewomen']
+
+# Output first five rows
+print(sw_col.iloc[:5])
