@@ -68,3 +68,19 @@ max_sw = np.max(sw_col)
 print(max_sw)
 
 
+# Question 6
+# Output the row containing the maximum percentage of women
+print(recent_grads[sw_col == max_sw])
+
+# Question 7
+# Convert to numpy array
+recent_grads_np = np.array(recent_grads[['unemployed', 'low_wage_jobs']])
+
+
+# Print the type of recent_grads_np
+print(type(recent_grads_np))
+
+#Question 8
+
+# Calculate correlation matrix
+print(np.corrcoef(recent_grads_np[:,0], recent_grads_np[:,1]))
