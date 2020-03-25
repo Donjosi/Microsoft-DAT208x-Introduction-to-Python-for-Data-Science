@@ -1,3 +1,5 @@
+#Section 1: Importing and Summarizing Data
+
 #Question 1
 
 """Read and explore your data
@@ -84,3 +86,6 @@ print(type(recent_grads_np))
 
 # Calculate correlation matrix
 print(np.corrcoef(recent_grads_np[:,0], recent_grads_np[:,1]))
+
+
+Section 2: Manipulating Data
