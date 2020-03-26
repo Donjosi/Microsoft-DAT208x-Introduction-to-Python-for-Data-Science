@@ -143,3 +143,8 @@ print(recent_grads.groupby(['major_category']).gender_diff.mean())
 # Find average number of low wage jobs and unemployment rate of each major category
 dept_stats = recent_grads.groupby(['major_category'])['low_wage_jobs', 'unemployment_rate'].mean()
 print(dept_stats)
+
+
+#Section 3: Visualizing Data
+
+
