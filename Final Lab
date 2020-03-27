@@ -146,5 +146,21 @@ print(dept_stats)
 
 
 #Section 3: Visualizing Data
+#Question 1
+# Import matplotlib
+import matplotlib.pyplot as plt
+
+# Create scatter plot
+plt.scatter(x=dept_stats["unemployment_rate"], y=dept_stats["low_wage_jobs"])
+
+# Label x axis
+plt.xlabel('Unemployment rate')
+
+# Label y axis
+plt.ylabel('Low pay jobs')
+
+# Display the graph 
+plt.show()
+
 
 
