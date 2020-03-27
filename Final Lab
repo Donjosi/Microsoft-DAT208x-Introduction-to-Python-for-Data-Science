@@ -162,5 +162,34 @@ plt.ylabel('Low pay jobs')
 # Display the graph 
 plt.show()
 
+#Question 2
+# Plot the red and triangle shaped scatter plot  
+plt.scatter(x=dept_stats['unemployment_rate'],y=dept_stats['low_wage_jobs'], color="r", marker="^")
+
+# Display the visualization
+plt.show()
+
+#Question 3
+
+# Plot a histogram of sharewomen
+plt.hist(recent_grads['sharewomen'])
+
+# Show the plot
+plt.show()
+
+#Question 4
+# Import matplotlib and pandas
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Create scatter plot
+dept_stats.plot(kind='scatter', x='unemployment_rate', y='low_wage_jobs')
+plt.show()
+
+# Create histogram
+recent_grads.sharewomen.plot(kind='hist')
+plt.show()
+
+Question 5
 
 
